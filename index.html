@@ -1,180 +1,594 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Portfolio</title>
+    <title>Spice Garden Restaurant</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <h2>My Portfolio</h2>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">🍽️ Spice Garden</div>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#special">Today's Special</a>
+            <a href="#booking">Book Table</a>
+            <a href="#feedback">Feedback</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
 
-    <!-- Home Section -->
-    <section id="home" class="home">
-        <div>
-            <h1>Hello, I'm <span>Sabin</span></h1>
+    <!-- Home -->
+    <section id="home" class="hero">
 
-            <h2>B.Tech CSE Student</h2>
+        <div class="hero-content">
+            <h1>Welcome to Spice Garden</h1>
 
             <p>
-                Welcome to my personal portfolio website.
-                I am interested in programming, web development
-                and learning new technologies.
+                Delicious food, warm hospitality and unforgettable moments.
             </p>
 
-            <a href="#contact" class="button">Contact Me</a>
+            <a href="#booking" class="button">
+                Book Your Table
+            </a>
         </div>
+
     </section>
 
 
-    <!-- About Section -->
-    <section id="about">
-        <h1>About Me</h1>
+    <!-- About -->
+    <section class="about">
+
+        <h2>About Our Restaurant</h2>
 
         <p>
-            Hello! My name is Sabin. I am a Computer Science Engineering
-            student. I am currently learning programming, web development
-            and computer science concepts.
+            Spice Garden is a family-friendly restaurant serving
+            delicious food made with fresh ingredients and traditional
+            cooking methods.
         </p>
 
-        <p>
-            I enjoy creating websites and working on small projects.
-            My goal is to improve my technical skills and become a
-            good software professional.
+        <div class="features">
+
+            <div class="feature">
+                <h3>🥗 Fresh Ingredients</h3>
+                <p>Fresh and quality ingredients in every dish.</p>
+            </div>
+
+            <div class="feature">
+                <h3>👨‍🍳 Expert Chefs</h3>
+                <p>Our chefs prepare every dish with care.</p>
+            </div>
+
+            <div class="feature">
+                <h3>❤️ Great Service</h3>
+                <p>Friendly service for a comfortable experience.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Today's Special -->
+    <section id="special" class="special-section">
+
+        <h2>🌟 Today's Special</h2>
+
+        <div class="special-card">
+
+            <div>
+                <img
+                    src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=800&q=80"
+                    alt="Chicken Biryani">
+            </div>
+
+            <div class="special-info">
+
+                <h3>Special Chicken Biryani</h3>
+
+                <p>
+                    Fragrant basmati rice cooked with tender chicken,
+                    fresh herbs and traditional spices.
+                </p>
+
+                <p>
+                    <strong>Ingredients:</strong>
+                    Basmati rice, chicken, onion, tomato,
+                    yogurt, herbs and spices.
+                </p>
+
+                <h4>₹249</h4>
+
+                <span class="special-tag">
+                    Chef's Special
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Menu -->
+    <section id="menu">
+
+        <h2>🍴 Our Menu</h2>
+
+        <div class="menu-container">
+
+            <!-- Food 1 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=80"
+                    alt="Momos">
+
+                <div class="food-content">
+
+                    <h3>Veg Momos</h3>
+
+                    <p>
+                        Steamed dumplings filled with fresh vegetables.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Cabbage, carrot, onion, flour and spices.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹120</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 2 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=700&q=80"
+                    alt="Biryani">
+
+                <div class="food-content">
+
+                    <h3>Chicken Biryani</h3>
+
+                    <p>
+                        Aromatic basmati rice with delicious chicken.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Rice, chicken, onion, tomato and spices.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹249</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 3 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?auto=format&fit=crop&w=700&q=80"
+                    alt="Paneer Tikka">
+
+                <div class="food-content">
+
+                    <h3>Paneer Tikka</h3>
+
+                    <p>
+                        Grilled paneer with vegetables and spices.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Paneer, capsicum, onion, yogurt and spices.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹199</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 4 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=700&q=80"
+                    alt="Fresh Salad">
+
+                <div class="food-content">
+
+                    <h3>Fresh Salad</h3>
+
+                    <p>
+                        Healthy salad prepared with fresh vegetables.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Cucumber, tomato, carrot, onion and lemon.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹99</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 5 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=700&q=80"
+                    alt="French Fries">
+
+                <div class="food-content">
+
+                    <h3>Crispy French Fries</h3>
+
+                    <p>
+                        Golden and crispy fries served with sauce.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Potato, salt, oil and seasoning.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹110</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Food 6 -->
+            <div class="food-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                    alt="Dessert">
+
+                <div class="food-content">
+
+                    <h3>Chocolate Dessert</h3>
+
+                    <p>
+                        Delicious chocolate dessert for sweet lovers.
+                    </p>
+
+                    <p class="ingredients">
+                        <strong>Ingredients:</strong>
+                        Chocolate, milk, cream and sugar.
+                    </p>
+
+                    <div class="food-bottom">
+                        <span>₹150</span>
+                        <button>Order</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking -->
+    <section id="booking" class="form-section">
+
+        <h2>🪑 Book Your Table</h2>
+
+        <div class="form-box">
+
+            <form>
+
+                <label>Full Name</label>
+                <input
+                    type="text"
+                    placeholder="Enter your name">
+
+                <label>Phone Number</label>
+                <input
+                    type="tel"
+                    placeholder="Enter phone number">
+
+                <div class="two-input">
+
+                    <div>
+                        <label>Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label>Time</label>
+                        <input type="time">
+                    </div>
+
+                </div>
+
+                <label>Number of Guests</label>
+
+                <select>
+                    <option>Select number of guests</option>
+                    <option>1 Person</option>
+                    <option>2 People</option>
+                    <option>3 People</option>
+                    <option>4 People</option>
+                    <option>5 People</option>
+                    <option>6+ People</option>
+                </select>
+
+                <label>Special Request</label>
+
+                <textarea
+                    placeholder="Birthday, window seat, decoration, etc.">
+                </textarea>
+
+                <button class="submit-button">
+                    Book My Table
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Staff Appreciation -->
+    <section class="staff-section">
+
+        <h2>❤️ Appreciate Our Team</h2>
+
+        <p class="center-text">
+            Had a great experience? Send appreciation to our team.
         </p>
-    </section>
 
+        <div class="staff-container">
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h1>My Skills</h1>
-
-        <div class="skills-container">
-
-            <div class="skill">
-                <h2>HTML</h2>
-                <p>Creating the structure of websites.</p>
+            <div class="staff-card">
+                <div class="staff-icon">👨‍🍳</div>
+                <h3>Chef</h3>
+                <p>
+                    Thank our chef for delicious food.
+                </p>
+                <button>Appreciate Chef</button>
             </div>
 
-            <div class="skill">
-                <h2>CSS</h2>
-                <p>Designing and styling websites.</p>
+            <div class="staff-card">
+                <div class="staff-icon">🧑‍🍽️</div>
+                <h3>Waiter</h3>
+                <p>
+                    Appreciate excellent table service.
+                </p>
+                <button>Appreciate Waiter</button>
             </div>
 
-            <div class="skill">
-                <h2>Python</h2>
-                <p>Learning programming and problem solving.</p>
-            </div>
-
-            <div class="skill">
-                <h2>C Programming</h2>
-                <p>Learning basic programming concepts and algorithms.</p>
-            </div>
-            <div class="skill">
-                <h2>java</h2>
+            <div class="staff-card">
+                <div class="staff-icon">🧑‍💼</div>
+                <h3>Manager</h3>
+                <p>
+                    Appreciate good restaurant management.
+                </p>
+                <button>Appreciate Manager</button>
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1>My Projects</h1>
+    <!-- Feedback -->
+    <section id="feedback" class="form-section">
 
-        <div class="projects-container">
+        <h2>⭐ Rate & Give Feedback</h2>
 
-            <div class="project">
-                <h2>Restaurant Website</h2>
+        <div class="form-box">
+
+            <form>
+
+                <label>Your Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your name">
+
+
+                <label>Restaurant Rating</label>
+
+                <div class="stars">
+                    ☆ ☆ ☆ ☆ ☆
+                </div>
+
+
+                <label>Food Quality</label>
+
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Needs Improvement</option>
+                </select>
+
+
+                <label>Service Quality</label>
+
+                <select>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Average</option>
+                    <option>Needs Improvement</option>
+                </select>
+
+
+                <label>Your Feedback</label>
+
+                <textarea
+                    placeholder="Tell us about your experience...">
+                </textarea>
+
+
+                <label>Your Suggestion</label>
+
+                <textarea
+                    placeholder="Suggest food, decoration, music, seating, etc.">
+                </textarea>
+
+
+                <label>Which team member would you like to appreciate?</label>
+
+                <select>
+                    <option>Chef</option>
+                    <option>Waiter</option>
+                    <option>Manager</option>
+                    <option>Whole Team</option>
+                </select>
+
+
+                <label>Optional Tip</label>
+
+                <select>
+                    <option>No Tip</option>
+                    <option>₹50</option>
+                    <option>₹100</option>
+                    <option>₹200</option>
+                    <option>₹500</option>
+                </select>
+
+
+                <button class="submit-button">
+                    Submit Feedback
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Customer Suggestions -->
+    <section class="suggestion-section">
+
+        <h2>💡 What Would You Like To See?</h2>
+
+        <div class="suggestion-container">
+
+            <div class="suggestion-card">
+                <h3>🍜 New Food</h3>
                 <p>
-                    A simple restaurant website created using HTML
-                    and CSS.
+                    Suggest a food item you frequently want
+                    to eat when you visit us.
                 </p>
             </div>
 
-            <div class="project">
-                <h2>Noise Detection Project</h2>
+            <div class="suggestion-card">
+                <h3>🏠 Decoration</h3>
                 <p>
-                    A project idea for detecting noise levels in
-                    classrooms and traffic areas.
+                    Suggest changes to our decoration,
+                    seating or restaurant design.
                 </p>
             </div>
 
-            <div class="project">
-                <h2>Python Programs</h2>
+            <div class="suggestion-card">
+                <h3>🎵 Music & Atmosphere</h3>
                 <p>
-                    Basic Python programs including searching,
-                    sorting and stack operations.
+                    Tell us what music or atmosphere
+                    you would like.
+                </p>
+            </div>
+
+            <div class="suggestion-card">
+                <h3>🍽️ Menu Improvement</h3>
+                <p>
+                    Suggest food items that you would
+                    like us to add.
                 </p>
             </div>
 
         </div>
+
     </section>
 
 
-    <!-- Education Section -->
-    <section id="education">
-        <h1>Education</h1>
+    <!-- Contact -->
+    <section id="contact" class="contact">
 
-        <div class="education-box">
+        <h2>📞 Contact Us</h2>
 
-            <h2>B.Tech in Computer Science Engineering with specializaton in AIML.</h2>
-            <p>Currently pursuing my Bachelor's degree.</p>
+        <div class="contact-container">
 
-            <hr>
+            <div>
+                <h3>📍Address</h3>
+                <p>Ring Road, chabahil,Mitrapark kathmandu</p>
+            </div>
 
-            <h2>Higher Secondary Education</h2>
-            <p>Completed Class 12 / +2.</p>
+            <div>
+                <h3>📞 Phone</h3>
+                <p>+977 9762279423</p>
+            </div>
 
-        </div>
-    </section>
+            <div>
+                <h3>✉️ Email</h3>
+                <p>smainali845@gmail.com</p>
+            </div>
 
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h1>Contact Me</h1>
-
-        <div class="contact-box">
-
-            <p><strong>Name:</strong> Sabin prasad Mainali</p>
-
-            <p>
-                <strong>Email:</strong>
-                smainali845@gmail.com
-            </p>
-
-            <p>
-                <strong>GitHub:</strong>
-                 <a href="https://github.com/smainali845-max/mywebsite" target="_blank">
-                 Visit My GitHub
-                 </a>
-            </p>
-
-            <p>
-                <strong>Phone:</strong>
-                +91 xxxxxxxxxx
-            </p>
+            <div>
+                <h3>🕐 Opening Hours</h3>
+                <p>10:00 AM – 10:00 PM</p>
+            </div>
 
         </div>
+
     </section>
 
 
     <!-- Footer -->
     <footer>
-        <p>© 2026 Sabin | My Portfolio</p>
+
+        <h2>🍽️ Spice Garden</h2>
+
+        <p>
+            Good Food • Good People • Good Memories
+        </p>
+
+        <p>
+            © 2026 Spice Garden Restaurant
+        </p>
+
     </footer>
 
 </body>
